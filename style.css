@@ -1,0 +1,33 @@
+html, body {
+	font-family: calibri;
+}
+
+* {
+    margin: 0px;
+    padding: 3px;
+}
+
+#main {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    margin: 100px auto;
+    box-shadow: 3px 3px 2px 2px grey;
+}
+
+input {
+	border-radius: 10px;
+}
+button {
+	width: 70px;
+	height: 35px;
+	border: solid white;
+	border-radius: 10px;
+	color: white;
+	background: grey;
+}
+button:hover {
+	cursor: pointer;
+	color: black;
+	background: #D0D0D0;
+}
