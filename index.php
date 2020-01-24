@@ -6,12 +6,10 @@
 		html, body {
 			font-family: calibri;
 		}
-
 	    * {
 	        margin: 0px;
 	        padding: 0px;
 	    }
-
 	    #main {
 	        border: 1px solid black;
 	        width: 450px;
@@ -20,7 +18,6 @@
 		    border-radius: 10px;
 	        box-shadow: 3px 3px 2px 2px grey;
 	    }
-
 	    #message_area {
 	        overflow: auto;
 	        width: 98%;
@@ -29,14 +26,12 @@
 	        border-radius: 10px;
 	        height: 440px;
 	    }
-
 	    #inputArea {
 			width: 365px;
 			height: 50px;
 			border: solid white;
 			border-radius: 10px;
 	    }
-
 	    #btnMessage {
 			width: 70px;
 			height: 50px;
