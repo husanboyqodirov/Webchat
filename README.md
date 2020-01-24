@@ -2,7 +2,7 @@
 
 <h4>PHP 7.4, MariaDB, Apache 2.4, </h4>
 
-Webchat is a system that allows users to communicate in real time using easily accessible web interface. It is a type of online chat distinguished by its simplicity and accessibility to users who do not wish to take the time to install and learn to use specialized chat software. This trait allows users instantaneous access and only a web browser is required to chat. Users will always get the latest version of a chat service because no software installation or updates are required.
+Webchat is a system that allows users to communicate in real time using easily accessible web interface. It is a type of online chat distinguished by its simplicity and accessibility to users who do not wish to take the time to install and learn to use specialized chat software. This trait facilitates users instantaneous access and only a web browser is required to chat. Users will always get the latest version of a chat service because no software installation or updates are required.
 
 <h3>Below are screenshots of login, register and main pages and a showcase of how backend database is stored.</h3>
 
