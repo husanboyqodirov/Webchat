@@ -11,6 +11,8 @@ Webchat is a system that allows users to communicate in real time using easily a
 <img src="images/main-page.PNG">
 <img src="images/database-backend.png">
 
+<hr>
+
 Any improvements or modifications are welcomed! Download the project, design it using CSS or its layout using HTML. Feel free to add any other features using PHP or JavaScript and create Issues and Pull requests here and I will merge them!
 
 How To Run The Website?
