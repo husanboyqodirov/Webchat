@@ -12,17 +12,19 @@
 	    $last_name = $_POST['last_name'];
 	    $user_name = $_POST['user_name'];
 	    $password = $_POST['password'];
-	    $sql = "SELECT user_name FROM webchat_user WHERE user_name='$user_name'";
-	    $retval = mysqli_query($conn, $sql);
+
+	    $stmt = $conn->prepare("SELECT user_name FROM webchat_user WHERE user_name=?");
+	    $stmt->bind_param("sss", $user_name);
+	    $stmt->execute();
+	    $retval = $stmt->get_result();
 	    if (mysqli_num_rows($retval) != 0) {
 	        echo "Username already exists.";
 	    } else {
-	        $sql = "INSERT INTO webchat_user (first_name, last_name, user_name, password) VALUES ('$first_name', '$last_name', '$user_name', '$password')";
-	        if (mysqli_query($conn, $sql)) {
-	            header("location:login.php");
-	        } else {
-	            echo $sql;
-	        }
+	    	$stmt = $conn->prepare("INSERT INTO webchat_user (first_name, last_name, user_name, password) VALUES (?, ?, ?, ?)");
+	    	$stmt->bind_param("sss", $first_name, $last_name, $user_name, $password);
+	    	$stmt->execute();
+	    	$retval = $stmt->get_result();
+            header("location:login.php");
 	    }
 	}
 ?>
